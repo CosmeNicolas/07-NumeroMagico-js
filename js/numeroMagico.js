@@ -2,3 +2,6 @@
 Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que adivino el numero.
  */
 
+const crearNumeroAleatorio = ()=>{
+  console.log("iniciando juego desde archivo js")
+}
