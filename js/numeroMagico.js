@@ -2,6 +2,10 @@
 Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que adivino el numero.
  */
 
-const crearNumeroAleatorio = ()=>{
+const iniciarJuego = ()=>{
   console.log("iniciando juego desde archivo js")
+
+  const crearNumeroAleatori0 = parseInt(Math.random() * 10 + 1)
+  console.log(crearNumeroAleatori0)
+
 }
