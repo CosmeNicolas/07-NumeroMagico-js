@@ -4,8 +4,8 @@ Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que 
 
 const iniciarJuego = ()=>{
   //console.log("iniciando juego desde archivo js")
-
   const crearNumeroAleatorio = parseInt(Math.random() * 10 + 1)
   console.log(crearNumeroAleatorio)
-  
 }
+
+//obtener datos 
