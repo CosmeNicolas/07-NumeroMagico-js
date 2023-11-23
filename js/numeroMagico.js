@@ -2,10 +2,24 @@
 Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que adivino el numero.
  */
 
-const iniciarJuego = ()=>{
+const iniciarJuego = () => {
   //console.log("iniciando juego desde archivo js")
   const crearNumeroAleatorio = parseInt(Math.random() * 10 + 1)
   console.log(crearNumeroAleatorio)
-}
+  alert('Se ya genero el numero intente adivinarlo')
 
-//obtener datos 
+  const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
+  btnAdivinarNumero.addEventListener('click', () => {
+    const numeroIngresado = parseInt(document.getElementById('numeroIngresado').value);
+    console.log(numeroIngresado)
+    if(crearNumeroAleatorio === numeroIngresado){
+      alert('Felicidades Ganaste')
+    }else{
+      alert('Vuelve a intentar')
+    }
+    formularioNumero.reset()
+  })
+};
+
+
+const formularioNumero = document.getElementById('formulario')

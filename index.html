@@ -55,17 +55,21 @@
 
   <main class="container-fluid">
     <h1>🪄Número Mágico 💫</h1>
+    <h2>Reglas!</h2>
+    <p>1-Al presionaar comenzar juego se genera un numero del 1 al 10</p>
+    <p>2-Una vez presionado debera ingresar un numero del 1 al 10 en el renglon de abajo e intentar adivinar que numero salio</p>
+    <p>3-Presionar el "Boton adivinar numero"</p>
     <section class="container-fluid my-5">
       <button class="btn btn-primary" onclick="iniciarJuego()">Comenzar el Juego </button>
     </section>
     <section class="container-fluid">
-      <form class="d-flex flex-column">
-        <label for="ingresarNumero">Ingresá un número del 1 al 10</label>
+      <form class="d-flex flex-column" id="formulario">
+        <label for="numeroIngresado">Ingresá un número del 1 al 10</label>
         <input type="number" 
-        id="ingresarNumero" 
+        id="numeroIngresado" 
         placeholder="Ingrese su numero"
         maxlength="10" minlength="1">
-        <button class="btn btn-dark my-2" type="submit">Adivinar Proximo Numero</button>
+        <button class="btn btn-dark my-2" type="submit" id="btnAdivinarNumero">Adivinar Proximo Numero</button>
       </form>
     </section>
   </main>
