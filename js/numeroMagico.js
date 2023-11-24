@@ -11,7 +11,7 @@ const iniciarJuego = () => {
 
   const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
   btnAdivinarNumero.addEventListener('click', (e) => {
-    e.eventDefault();
+    e.preventDefault();
     const numeroIngresado = parseInt(document.getElementById('numeroIngresado').value);
     console.log(numeroIngresado)
     if (crearNumeroAleatorio === numeroIngresado) {
