@@ -4,18 +4,26 @@ Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que 
 
 const iniciarJuego = () => {
 
+
   const crearNumeroAleatorio = parseInt(Math.random() * 5 + 1)
   console.log(crearNumeroAleatorio)
-  alert('ya generó el número, intente adivinarlo')
+  Swal.fire("Se generó el número aleatorio");
 
   const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
-  btnAdivinarNumero.addEventListener('click', () => {
+  btnAdivinarNumero.addEventListener('click', (e) => {
+    e.preventDefault()
     const numeroIngresado = parseInt(document.getElementById('numeroIngresado').value);
     console.log(numeroIngresado)
     if (crearNumeroAleatorio === numeroIngresado) {
-      alert('Felicidades Ganaste')
+      Swal.fire({
+        title: "GANASTE!",
+        icon: "success"
+      });
     } else {
-      alert('Vuelve a intentar')
+      Swal.fire({
+        title: "Segui Participando!",
+        icon: "error"
+      });
     }
     formularioNumero.reset()
   })
