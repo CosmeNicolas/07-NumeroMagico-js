@@ -10,8 +10,7 @@ const iniciarJuego = () => {
   Swal.fire("Se generó el número aleatorio");
 
   const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
-  btnAdivinarNumero.addEventListener('click', (e) => {
-    e.preventDefault()
+  btnAdivinarNumero.addEventListener('click', () => {
     const numeroIngresado = parseInt(document.getElementById('numeroIngresado').value);
     console.log(numeroIngresado)
     if (crearNumeroAleatorio === numeroIngresado) {
