@@ -6,7 +6,7 @@ const iniciarJuego = () => {
   //console.log("iniciando juego desde archivo js")
   const crearNumeroAleatorio = parseInt(Math.random() * 10 + 1)
   console.log(crearNumeroAleatorio)
-  alert('Se ya genero el numero intente adivinarlo')
+  alert('Se ya generó el número, intente adivinarlo')
 
   const btnAdivinarNumero = document.getElementById('btnAdivinarNumero')
   btnAdivinarNumero.addEventListener('click', () => {
