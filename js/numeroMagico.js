@@ -4,7 +4,7 @@ Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que 
 
 const iniciarJuego = () => {
 
-  const crearNumeroAleatorio = parseInt(Math.random() * 10 + 1)
+  const crearNumeroAleatorio = parseInt(Math.random() * 5 + 1)
   console.log(crearNumeroAleatorio)
   alert('ya generó el número, intente adivinarlo')
 
